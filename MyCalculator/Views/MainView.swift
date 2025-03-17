@@ -125,8 +125,7 @@ struct MainView: View {
         case .negative:
             if let currentValue = Double(value){
                 value = formatResult(-currentValue)
-                showNumb.insert("!", at: showNumb.index(showNumb.endIndex, offsetBy: -(value.count)))
-
+               
             }
         case .divide:
             if let currentValue = Double(value) {
